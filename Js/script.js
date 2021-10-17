@@ -10,8 +10,13 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("launch").innerHTML =
-    days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+  
+ 
+  document.getElementById("Days").innerHTML = days;
+  document.getElementById("Hours").innerHTML = hours;
+  document.getElementById("Minutes").innerHTML = minutes;
+  document.getElementById("Seconds").innerHTML = seconds;
+  
 
   if (distance < 0) {
     clearInterval(x);
