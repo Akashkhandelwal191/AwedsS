@@ -1,5 +1,5 @@
 var countDownDate = new Date("Nov 20, 2021 00:00:00").getTime();
-
+var trigger = 0;
 var x = setInterval(function () {
   var now = new Date().getTime();
 
@@ -18,3 +18,47 @@ var x = setInterval(function () {
     document.getElementById("launch").innerHTML = "EVENT OVER";
   }
 }, 1000);
+
+
+
+
+
+function Slide()
+{ 
+
+  
+    document.getElementById('switch1').style.top = "8%";
+   
+  
+  
+  trigger = 1;
+}
+
+function UnSlide()
+{ 
+
+  
+    document.getElementById('switch1').style.top = "-40%";
+  
+    
+  
+  
+    trigger = 0;
+}
+
+document.getElementById('menu').addEventListener("click",toggleSwitch);
+
+
+function toggleSwitch()
+{ 
+  
+   if(trigger == 0)
+   {
+       Slide(); 
+   }
+   
+   else
+   {
+     UnSlide();
+   }
+}
