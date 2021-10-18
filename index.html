@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon Page</title>
-    
 
-    <!-- BootStrap Min Css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankur & Sonam</title>
+   
+  <!-- Favicon -->
+  <link rel="icon" href="Image/AS4.jpg">
 
-    <!-- WebFonts Css -->
-    <link rel="stylesheet" href="Css/all.css" />
+  <!-- BootStrap Min Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="Css/style.css" />
-  </head>
-  <body>
-    <section>
-      <div class="Slider" id="switch1">
-        <div class="menu">
-          <li>Home</li>
-          <li>Where And When</li>
-          <li>About Couple</li>
-          <li>Gallery</li>
-          <li>Events And Party</li>
-          <li>Accomodation</li>
-          <li>RSVP</li>
-        </div>
+  <!-- WebFonts Css -->
+  <link rel="stylesheet" href="Css/all.css" />
+  
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="Css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="Slider" id="switch1">
+      <div class="menu">
+        <li><a href="#Home">Home</a></li>
+        <li>Where And When</li>
+        <li>About Couple</li>
+        <li>Gallery</li>
+        <li>Events And Party</li>
+        <li>Accomodation</li>
+        <li>RSVP</li>
       </div>
-      <div class="sidebar" id="switch2">
-        <div class="sidebar-part">
-          <div class="icon1 Icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Menu">
-            <i class="fas fa-bars fa-2x" id="menu"></i>
-          </div>
-          <div class="icon2 Icon  data-bs-toggle="tooltip" data-bs-placement="right" title="Location">
-            <i class="fas fa-map-marker-alt fa-2x"></i>
-          </div>
-          <div class="icon3 Icon data-bs-toggle="tooltip" data-bs-placement="right" title="RSVP"><i class="far fa-envelope fa-2x"></i></div>
-        </div>
+    </div>
+    <div class="sidebar" id="switch2">
+
+      <div class="logoblock">
+           <img src="Image/AS7-removebg-preview.png"  class="custom" alt="">
       </div>
-    </section>
 
-    <header></header>
-
-    <div class="hero">
-      <p id="Naming">
-        <b class="h1 text-primary">A</b>nkur Gupta And
-        <b class="h1 text-primary">S</b>onam Gupta
-      </p>
-      <h1>ARE GETTING MARRIED</h1>
-
-      <hr />
+      <div class="sidebar-part">
+        <div class="icon1 Icon" data-bs-toggle="tooltip" data-bs-placement="right" title="Menu">
+          <i class="fas fa-bars fa-2x" id="menu"></i>
+        </div>
+        <div class="icon2 Icon  data-bs-toggle=" tooltip" data-bs-placement="right" title="Location">
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+        </div>
+        <div class="icon3 Icon data-bs-toggle=" tooltip" data-bs-placement="right" title="RSVP"><i
+            class="far fa-envelope fa-2x"></i></div>
+      </div>
+    </div>
+  </header>
 
   
 
+
+
+  <section id="Home">
+
+    <div class="image"></div>
+
+    <div class="hero">
+      <p id="Naming">
+        <b class="h1 text-primary specialletter">A</b>nkur Gupta And
+        <b class="h1 text-primary specialletter">S</b>onam Gupta
+      </p>
+      <h3>ARE GETTING MARRIED</h3>
+      <hr />
       <div class="updigit">
-       <div>
-       <div class="digit h1" id="Days"></div>
-       <p>Days</p>
+        <div>
+          <div class="digit h1" id="Days"></div>
+          <p>Days</p>
+        </div>
+
+        <div>
+          <div class="digit h1" id="Hours"></div>
+          <p>Hours</p>
+        </div>
+
+        <div>
+          <div class="digit h1" id="Minutes"></div>
+          <p>Minutes</p>
+        </div>
+
+        <div>
+          <div class="digit h1" id="Seconds"></div>
+          <p>Seconds</p>
+        </div>
       </div>
 
-       <div>
-        <div class="digit h1" id="Hours"></div>
-        <p>Hours</p>
-       </div>
-       
-       <div>
-        <div class="digit h1" id="Minutes"></div>
-        <p>Minutes</p>
-       </div>
-        
-       <div>
-        <div class="digit h1" id="Seconds"></div>
-        <p>Seconds</p>
-       </div>
-       
-
-      </div>
+     <div>
+         <p class="date">-20 Nov 2021-</p>
+     </div>
 
     </div>
-  </body>
-  <script src="Js/script.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"
-  ></script>
+  </section>
+
+
+  <section id="WhereAndWhen">
+
+    <div class="container SubWhereAndWhen">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium, quis tempore, ab possimus
+        voluptatibus est molestias hic culpa fuga aliquam eveniet facere quia ipsam perferendis id, neque expedita ut
+        dicta veritatis libero veniam dignissimos voluptatem? Aliquid excepturi sint reiciendis expedita quisquam aut
+        exercitationem, officiis tenetur delectus, consequuntur officia rem.</p>
+
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nobis fuga sed perferendis dicta quam
+        distinctio dolor accusamus! Aliquid, a similique ea explicabo consequuntur sunt impedit tempora debitis error
+        quod eaque, totam nesciunt maiores, nemo sapiente accusamus expedita sit dolore?</p>
+
+      
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nobis fuga sed perferendis dicta quam
+          distinctio dolor accusamus! Aliquid, a similique ea explicabo consequuntur sunt impedit tempora debitis error
+          quod eaque, totam nesciunt maiores, nemo sapiente accusamus expedita sit dolore?</p>
+        
+
+    </div>
+
+  </section>
+
+</body>
+<script src="Js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </html>

@@ -43,7 +43,7 @@ function UnSlide()
 { 
 
   
-    document.getElementById('switch1').style.top = "-40%";
+    document.getElementById('switch1').style.top = "-50%";
   
     
   
