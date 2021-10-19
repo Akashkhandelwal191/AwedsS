@@ -11,7 +11,9 @@
   <title>Ankur & Sonam</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="Image/AS4.jpg">
+  <link rel="icon" href="Images/AS4.jpg">
+
+
 
   <!-- BootStrap Min Css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +22,8 @@
   <!-- WebFonts Css -->
   <link rel="stylesheet" href="Css/all.css" />
 
+  <link rel="stylesheet" href="Css/lightbox.min.css">
+
   <!-- Custom Css -->
   <link rel="stylesheet" href="Css/style.css" />
 
@@ -27,6 +31,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <script src="Js/lightbox-plus-jquery.min.js"></script>
 
 </head>
 
@@ -47,7 +53,7 @@
 
     <div class="sidebar" id="switch2">
       <div class="logoblock">
-        <a href="#Home"> <img src="Image/AS8.png" class="custom" alt=""></a>
+        <a href="#Home"> <img src="Images/AS8.png" class="custom" alt=""></a>
       </div>
 
       <div class="sidebar-part">
@@ -144,10 +150,11 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card border-0" style="width: 100%;">
-            <img src="Image/WS2.jpg" class="card-img-top" alt="...">
+            <img src="Images/WS2.jpg" class="card-img-top couple-img" alt="...">
             <div class="card-body">
-               <div class="HeadingName text-center">Ankur</div>
-              <p class="card-text card-content">Some quick example text to build on the card title and make up the bulk of the card.
+              <div class="HeadingName text-center">Ankur</div>
+              <p class="card-text card-content">Some quick example text to build on the card title and make up the bulk
+                of the card.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia, accusamus rem dolorum alias ipsa
                 ducimus commodi sint maxime quisquam officia consequuntur. Officia dolorum, consequatur suscipit beatae
                 consequuntur debitis soluta nobis impedit voluptatum quis laboriosam rem praesentium doloribus, ullam
@@ -158,11 +165,13 @@
 
         <div class="col-md-6">
           <div class="card border-0" style="width: 100%;">
-            <img src="Image/WS2.jpg" class="card-img-top" alt="...">
+            <img src="Images/WS2.jpg" class="card-img-top couple-img" alt="...">
             <div class="card-body">
-              <div class="HeadingName text-center">Sonam</div> 
-              <p class="card-text card-content">Some quick example text to build on the card title and make up the bulk of the card's
-                content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia, accusamus rem dolorum alias ipsa
+              <div class="HeadingName text-center">Sonam</div>
+              <p class="card-text card-content">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia, accusamus rem dolorum alias
+                ipsa
                 ducimus commodi sint maxime quisquam officia consequuntur. Officia dolorum, consequatur suscipit beatae
                 consequuntur debitis soluta nobis impedit voluptatum quis laboriosam rem praesentium doloribus, ullam
                 illum</p>
@@ -179,12 +188,45 @@
 
 
 
-   <section id="Gallery">
-    
+  <section id="Gallery">
+
+    <div class="container gallery">
+
+      <div class="galleryheading text-center h1">Gallery</div>
 
 
-   </section>
+      <div class="gallery-img container">
 
+        <a href="Images/WS1.jpg" data-lightbox="mygallery"><img src="Images/WS1.jpg" alt=""></a>
+        <a href="Images/WS2.jpg" data-lightbox="mygallery"><img src="Images/WS2.jpg" alt=""></a>
+        <a href="Images/WS3.jpg" data-lightbox="mygallery"><img src="Images/WS3.jpg" alt=""></a>
+        <a href="Images/WS4.jpg" data-lightbox="mygallery"><img src="Images/WS4.jpg" alt=""></a>
+        <a href="Images/WS5.jpg" data-lightbox="mygallery"><img src="Images/WS5.jpg" alt=""></a>
+        <a href="Images/WS6.jpg" data-lightbox="mygallery"><img src="Images/WS6.jpg" alt=""></a>
+        <a href="Images/AS2.jpg" data-lightbox="mygallery"><img src="Images/AS2.jpg" alt=""></a>
+        <a href="Images/AS3.png" data-lightbox="mygallery"><img src="Images/AS3.png" alt=""></a>
+        <a href="Images/AS4.jpg" data-lightbox="mygallery"><img src="Images/AS4.jpg" alt=""></a>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <section class="EventsAndParty">
+
+     <div class="container EventAndParty">
+   
+       <div class="EventsAndPartyHeading text-center">Events And Parties</div>
+
+
+
+     </div>
+
+
+  </section>
 
 
 </body>
