@@ -16,7 +16,7 @@ html
 
 .image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(53, 16, 16, 0.7)),
-    url(../Images/WS2.jpg);
+    url(../images/WS2.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
