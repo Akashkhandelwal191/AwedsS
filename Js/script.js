@@ -32,7 +32,7 @@ function Slide()
 { 
 
   
-    document.getElementById('switch1').style.top = "8%";
+    document.getElementById('switch1').style.top = "9%";
    
   
   
@@ -67,3 +67,12 @@ function toggleSwitch()
      UnSlide();
    }
 }
+
+
+
+const divs = document.querySelectorAll('.a');
+
+divs.forEach(el => el.addEventListener('click', event => {
+    
+       UnSlide();
+}));
