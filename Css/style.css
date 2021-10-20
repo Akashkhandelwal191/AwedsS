@@ -10,8 +10,6 @@
 html
 {
   scroll-behavior: smooth;
-  
-
 }
 
 .image {
@@ -59,9 +57,6 @@ html
 .logoblock
 {
   height: 100px;
-  /* width: 100%; */
-  
-  
 }
 
 .custom
@@ -72,7 +67,6 @@ html
   top:-10%;
   cursor: pointer;
   filter: invert(100%);
-  
 }
 
 .menu {
@@ -195,7 +189,7 @@ hr {
    margin-top: 70px;
    margin-bottom: 70px;
    padding: 20px;
-   background-attachment: fixed;
+   
 }
 
 .SubWhereAndWhen2
@@ -263,7 +257,7 @@ hr {
    font-family: 'Dancing Script', cursive;
    padding: 10px;
    font-size: 4rem;
-
+   margin-bottom: 20px;
 
 
 }
@@ -319,4 +313,44 @@ hr {
   font-family: 'Dancing Script', cursive;
   padding: 10px;
   font-size: 4rem;
+}
+
+.EventAndParty-content
+{
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+
+}
+
+.GIF-IMG
+{  
+   margin-top: 50px;
+   background-image: url(../images/WS2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+
+.GIF-IMG img
+{
+   height: 360px;
+   width: auto;
+   transition: all 1s ease-in-out;
+   cursor: pointer; 
+   
+}
+
+.GIF-IMG img:hover
+{
+     transform: rotate(360deg) scale(1.1);
+     box-shadow: 10px 10px 8px #888888;
+     
 }

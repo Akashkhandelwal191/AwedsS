@@ -10,13 +10,11 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  
- 
   document.getElementById("Days").innerHTML = days;
   document.getElementById("Hours").innerHTML = hours;
   document.getElementById("Minutes").innerHTML = minutes;
   document.getElementById("Seconds").innerHTML = seconds;
-  
+
 
   if (distance < 0) {
     clearInterval(x);
@@ -28,51 +26,32 @@ var x = setInterval(function () {
 
 
 
-function Slide()
-{ 
-
-  
-    document.getElementById('switch1').style.top = "9%";
-   
-  
-  
+function Slide() {
+  document.getElementById('switch1').style.top = "9%";
   trigger = 1;
 }
 
-function UnSlide()
-{ 
-
-  
-    document.getElementById('switch1').style.top = "-50%";
-  
-    
-  
-  
-    trigger = 0;
+function UnSlide() {
+  document.getElementById('switch1').style.top = "-50%";
+  trigger = 0;
 }
 
-document.getElementById('menu').addEventListener("click",toggleSwitch);
+document.getElementById('menu').addEventListener("click", toggleSwitch);
+function toggleSwitch() {
 
+  if (trigger == 0) {
+    Slide();
+  }
 
-function toggleSwitch()
-{ 
-  
-   if(trigger == 0)
-   {
-       Slide(); 
-   }
-   
-   else
-   {
-     UnSlide();
-   }
+  else {
+    UnSlide();
+  }
 }
 
 
 
 const divs = document.querySelectorAll('.a');
-
 divs.forEach(el => el.addEventListener('click', event => {
-    
-       UnSlide();
+
+  UnSlide();
 }));
