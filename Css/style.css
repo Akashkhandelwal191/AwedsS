@@ -12,10 +12,17 @@ html
   scroll-behavior: smooth;
 }
 
+
+body
+{
+  overflow-x: hidden;
+}
+
 .image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(53, 16, 16, 0.7)),
     url(../images/WS2.jpg);
   height: 100vh;
+  width: 100vw;
   background-position: center;
   background-size: cover;
   transition: all 0.6s;
@@ -24,7 +31,7 @@ html
 }
 
 .sidebar {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #0984e3;
   /* background-color: #ffffff; */
@@ -40,11 +47,12 @@ html
 .sidebar-part {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
 .Slider {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color:#0984e3;
   position: fixed;
@@ -100,7 +108,7 @@ html
   /* background-color: #4834d4; */
   background-color: #3867d6;
   border-radius: 50%;
-  margin: 10px;
+  margin: 8px;
   padding: 10px;
   text-align: center;
   cursor: pointer;
@@ -345,12 +353,94 @@ hr {
    width: auto;
    transition: all 1s ease-in-out;
    cursor: pointer; 
+   box-shadow: 10px 10px 8px #888888;
+   /* animation: gif 4s infinite; */
    
 }
 
-.GIF-IMG img:hover
-{
-     transform: rotate(360deg) scale(1.1);
-     box-shadow: 10px 10px 8px #888888;
+@keyframes gif {
+   
+   0%
+   {
+     transform: rotate(0deg) scale(1);
      
+   }
+   
+   100%
+   {
+     transform: rotate(360deg) scale(1.1);
+   }
+}
+
+
+
+.Accomodation
+{
+   margin-top: 60px;
+}
+
+.Accomodation img
+{
+   height: 300px;
+   
+}
+
+.Accomodation-heading
+{
+
+   font-family: 'Dancing Script', cursive;
+   padding: 10px;
+   font-size: 4rem;
+   margin-bottom: 20px;
+}
+
+.sidebar-part a
+{
+  text-decoration: none;
+  color:black;
+}
+
+.RSVP
+{
+   margin-top: 50px; 
+}
+
+.RSVP .RSVP-heading
+{ 
+  font-family: 'Dancing Script', cursive;
+  padding: 10px;
+  font-size: 4rem;
+  margin-bottom: 20px; 
+}
+
+.RSVP .RSVP-Content
+{
+
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.form
+{
+  margin-top: 70px;
+}
+
+.form-heading
+{
+  
+  padding: 10px;
+  font-size: 2.5rem;
+  /* margin-bottom: 20px;  */
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.footer
+{
+  position: relative;
+}
+
+.footer-heading
+{
+  position:absolute;
 }

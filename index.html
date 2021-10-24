@@ -36,7 +36,6 @@
 </head>
 
 <body>
-
   <!-- Header Section Start -->
   <header>
     <div class="Slider" id="switch1">
@@ -64,14 +63,16 @@
         <div class="icon2 Icon" title="Location" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <i class="fas fa-map-marker-alt fa-2x"></i>
         </div>
-        <div class="icon3 Icon" data-bs-toggle="tooltip" data-bs-placement="right" title="RSVP">
-          <i class="far fa-envelope fa-2x"></i>
-        </div>
+
+        <a href="#RSVP">
+          <div class="icon3 Icon" data-bs-toggle="tooltip" data-bs-placement="right" title="RSVP">
+            <i class="far fa-envelope fa-2x"></i>
+          </div>
+        </a>
       </div>
     </div>
   </header>
   <!-- Header Section End -->
-
 
   <!-- Home Section Start -->
   <section id="Home">
@@ -113,8 +114,6 @@
   </section>
   <!-- Home Section End -->
 
-
-
   <!-- WhereAndWhen Section Start -->
   <section id="WhereAndWhen">
     <div class="container SubWhereAndWhen">
@@ -137,9 +136,6 @@
     </div>
   </section>
   <!-- WhereAndWhen Section End -->
-   
-
-
 
   <!-- About Couple Section Start -->
   <section id="AboutCouple">
@@ -185,8 +181,6 @@
   </section>
   <!-- About Couple Section End -->
 
-
-
   <!-- Gallery Section Start -->
   <section id="Gallery">
     <div class="container gallery">
@@ -206,9 +200,6 @@
     </div>
   </section>
   <!-- Gallery Section End -->
-
-
-
 
   <!-- EventsAndParty Section End -->
   <section id="EventsAndParty">
@@ -270,20 +261,17 @@
   </section>
   <!-- EventsAndParty Section End -->
 
-  
   <!-- Map Modal Section Start -->
   <section id="Map">
-    <div class="container">  
+    <div class="container">
       <!-- Modal Triggered From Location Icon Present in Header Section -->
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.2678121242584!2d81.36766081447556!3d23.306040011523574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986fb78c97252fb%3A0x86c6c28fe400a59c!2sHotel%20Surya%20International!5e0!3m2!1sen!2sin!4v1634724343873!5m2!1sen!2sin"
               width="100%" height="600" style="border: 10px solid white" allowfullscreen="true" loading="lazy"></iframe>
-
           </div>
         </div>
       </div>
@@ -291,17 +279,99 @@
   </section>
   <!-- Map Modal Section End -->
 
-
-
+  <!-- GIF Section Start -->
   <section id="GIF">
-
     <div class="container-fluid GIF-IMG">
+      <img src="images/AS.gif" alt="" />
+    </div>
+  </section>
+  <!-- GIF Section End -->
 
-      <img src="images/AS.gif" alt="">
+  <!-- Accomodation Section Start -->
+  <section id="Accomodation">
+    <div class="container Accomodation">
+
+      <div class="text-center Accomodation-heading">Accomodation</div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/WS2.jpg" style="width: 100%;"alt="">
+        </div>
+
+        <div class="col-md-6">
+          <div class="h1">Hotel Surya</div>
+
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugiat dolorem distinctio ut possimus
+              amet debitis sit nihil. Harum, amet! Eaque quod obcaecati pariatur dolore deleniti repudiandae, eum
+              exercitationem veniam? Quis laborum quam tempore itaque nobis nostrum dolorem ea sequi! </p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti exercitationem provident perspiciatis
+              tetu Quam, vitae?</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Accomodation Section End -->
+
+  <!-- RSVP Section Start -->
+  <section id="RSVP">
+
+    <div class="container RSVP">
+
+
+      <div class="RSVP-heading text-center">Rsvp</div>
+      <div class="RSVP-Content text-center">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea magnam consectetur laboriosam dolorem quas
+          soluta ratione id accusamus? Perspiciatis quidem in nihil quae sequi nesciunt expedita! Laboriosam
+          perspiciatis inventore est, mollitia soluta tempora eveniet, totam nesciunt molestiae voluptatibus, quod
+          explicabo.</p>
+
+      </div>
+
+
+
+      <div class="form">
+
+        <div class="form-heading text-center">Join Our Events And Party</div>
+
+
+
+        <!--FORM-->
+        <form method="post" action="#" id="rsvpform">
+          <div id="fullname" class="mb-3">
+            <input type="text" class="form-control" id="inputname" placeholder="*Name">
+          </div>
+          <div id="email" class="mb-3">
+            <input type="email" class="form-control" id="inputemail" placeholder="*Email">
+          </div>
+          <div id="events-option" class="mb-3">
+            <select multiple id="inputevents" class="form-control">
+              <option>Wedding Day</option>
+              <option>Ceremony Day</option>
+              <option>The Party</option>
+            </select>
+          </div>
+          <div class="mb-3 text-center">
+            <input type="submit" id="submitButton" name="submitButton" class="btn btn-custom" value="I'm Attending">
+          </div>
+        </form>
+        <!--END of FORM-->
+
+
+      </div>
+
 
     </div>
 
+
   </section>
+  <!-- RSVP Section End -->
+
+  <footer>
+    
+  </footer>
 
 
 </body>
