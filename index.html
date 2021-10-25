@@ -12,6 +12,15 @@
 
   <!-- Favicon -->
   <link rel="icon" href="images/AS4.jpg" />
+  
+  <!-- Aos library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Animate Css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <!-- BootStrap Min Css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,6 +45,8 @@
 </head>
 
 <body>
+
+
   <!-- Header Section Start -->
   <header>
     <div class="Slider" id="switch1">
@@ -113,6 +124,9 @@
     </div>
   </section>
   <!-- Home Section End -->
+
+
+
 
   <!-- WhereAndWhen Section Start -->
   <section id="WhereAndWhen">
@@ -287,27 +301,32 @@
   </section>
   <!-- GIF Section End -->
 
+
   <!-- Accomodation Section Start -->
   <section id="Accomodation">
     <div class="container Accomodation">
-
       <div class="text-center Accomodation-heading">Accomodation</div>
       <div class="row">
         <div class="col-md-6">
-          <img src="images/WS2.jpg" style="width: 100%;"alt="">
+          <img src="images/WS2.jpg" style="width: 100%" alt="" />
         </div>
 
         <div class="col-md-6">
           <div class="h1">Hotel Surya</div>
 
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugiat dolorem distinctio ut possimus
-              amet debitis sit nihil. Harum, amet! Eaque quod obcaecati pariatur dolore deleniti repudiandae, eum
-              exercitationem veniam? Quis laborum quam tempore itaque nobis nostrum dolorem ea sequi! </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Deleniti fugiat dolorem distinctio ut possimus amet debitis sit
+              nihil. Harum, amet! Eaque quod obcaecati pariatur dolore
+              deleniti repudiandae, eum exercitationem veniam? Quis laborum
+              quam tempore itaque nobis nostrum dolorem ea sequi!
+            </p>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti exercitationem provident perspiciatis
-              tetu Quam, vitae?</p>
-
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Corrupti exercitationem provident perspiciatis tetu Quam, vitae?
+            </p>
           </div>
         </div>
       </div>
@@ -315,71 +334,106 @@
   </section>
   <!-- Accomodation Section End -->
 
+
+
+
   <!-- RSVP Section Start -->
   <section id="RSVP">
-
     <div class="container RSVP">
-
-
       <div class="RSVP-heading text-center">Rsvp</div>
       <div class="RSVP-Content text-center">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea magnam consectetur laboriosam dolorem quas
-          soluta ratione id accusamus? Perspiciatis quidem in nihil quae sequi nesciunt expedita! Laboriosam
-          perspiciatis inventore est, mollitia soluta tempora eveniet, totam nesciunt molestiae voluptatibus, quod
-          explicabo.</p>
-
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea magnam
+          consectetur laboriosam dolorem quas soluta ratione id accusamus?
+          Perspiciatis quidem in nihil quae sequi nesciunt expedita!
+          Laboriosam perspiciatis inventore est, mollitia soluta tempora
+          eveniet, totam nesciunt molestiae voluptatibus, quod explicabo.
+        </p>
       </div>
 
-
-
       <div class="form">
-
         <div class="form-heading text-center">Join Our Events And Party</div>
-
-
 
         <!--FORM-->
         <form method="post" action="#" id="rsvpform">
           <div id="fullname" class="mb-3">
-            <input type="text" class="form-control" id="inputname" placeholder="*Name">
+            <input type="text" class="form-control" id="inputname" placeholder="*Name" />
           </div>
           <div id="email" class="mb-3">
-            <input type="email" class="form-control" id="inputemail" placeholder="*Email">
+            <input type="email" class="form-control" id="inputemail" placeholder="*Email" />
           </div>
           <div id="events-option" class="mb-3">
-            <select multiple id="inputevents" class="form-control">
-              <option>Wedding Day</option>
-              <option>Ceremony Day</option>
-              <option>The Party</option>
-            </select>
+           <textarea name="Description" placeholder="Optional" id="" cols="30" rows="10" class="form-control"></textarea>
           </div>
           <div class="mb-3 text-center">
-            <input type="submit" id="submitButton" name="submitButton" class="btn btn-custom" value="I'm Attending">
+            <input type="submit" id="submitButton" name="submitButton" class="btn btn-custom" value="I'm Attending" />
           </div>
         </form>
         <!--END of FORM-->
-
-
       </div>
-
-
     </div>
-
-
   </section>
   <!-- RSVP Section End -->
 
-  <footer>
-    
-  </footer>
 
+
+  <!-- Footer Section Start  -->
+  <footer>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="my-2">Quick Links</h5>
+          <span class="footerlinks"><a href="#Home">Home</a></span>
+          <span class="footerlinks"><a href="#WhereAndWhen">Where And When</a></span>
+          <span class="footerlinks"><a href="#AboutCouple">About Couple</a></span>
+          <span class="footerlinks"><a href="#Gallery">Gallery</a></span>
+          <span class="footerlinks"><a href="#EventsAndParty">Events And Party</a></span>
+          <span class="footerlinks"><a href="#Accomodation">Accomodation</a></span>
+          <span class="footerlinks"><a href="#RSVP">RSVP</a></span>
+
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="my-2">Popular Apps</h5>
+          <span class="footerlinks"><a href="https://selfregistration.cowin.gov.in/" target="_blank">Co-WIN</a></span>
+          <span class="footerlinks"><a href="https://www.aarogyasetu.gov.in/applink/" target="_blank">Aarogya
+              Setu</a></span>
+          <span class="footerlinks"><a
+              href="https://web.umang.gov.in/web_new/login?redirect_to=&utm_source=MyGov&utm_medium=MyGovCovid-19"
+              target="_blank">UMANG</a></span>
+          <span class="footerlinks"><a href="https://www.mygov.in/" target="_blank">MyGov</a></span>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="my-2">Activities</h5>
+
+          <span class="footerlinks"><a href="https://www.mygov.in/groups/" target="_blank">Groups</a></span>
+          <span class="footerlinks"><a href="https://www.mygov.in/campaigns/" target="_blank">Campaigns Setu</a></span>
+          <span class="footerlinks"><a href="https://www.mygov.in/podcast/" target="_blank">PodCast</a></span>
+          <span class="footerlinks"><a href="https://quiz.mygov.in/" target="_blank">MyGov Quiz</a></span>
+          <span class="footerlinks"><a href="https://www.mygov.in/home/blog/" target="_blank">Blogs</a></span>
+
+          <span class="footerlinks"><a href="https://www.mygov.in/cards/" target="_blank">Wall Of Fame</a></span>
+          <span class="footerlinks"><a href="https://www.mygov.in/weekly-newsletter/" target="_blank">Weekly
+              Newsletter</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      Copyright &copy; 2021 Ankur weds Sonam. All rights reserved!
+      <p>
+        Created By Akash Khandelwal
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </p>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
 
 </body>
 
-<!-- Custom Js -->
-<script src="Js/script.js"></script>
 
-<!-- Popper Js -->
+
+<!-- Popper Min Js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
   integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 
@@ -387,4 +441,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
   integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+ <!-- Aos JS -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     offset: 300,
+     duration: 1100,
+   });
+ </script>
+
+
+<!-- Custom Js -->
+<script src="Js/script.js"></script>  
 </html>

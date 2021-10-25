@@ -15,43 +15,34 @@ var x = setInterval(function () {
   document.getElementById("Minutes").innerHTML = minutes;
   document.getElementById("Seconds").innerHTML = seconds;
 
-
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("launch").innerHTML = "EVENT OVER";
   }
 }, 1000);
 
-
-
-
-
 function Slide() {
-  document.getElementById('switch1').style.top = "9%";
+  document.getElementById("switch1").style.top = "9%";
   trigger = 1;
 }
 
 function UnSlide() {
-  document.getElementById('switch1').style.top = "-50%";
+  document.getElementById("switch1").style.top = "-50%";
   trigger = 0;
 }
 
-document.getElementById('menu').addEventListener("click", toggleSwitch);
+document.getElementById("menu").addEventListener("click", toggleSwitch);
 function toggleSwitch() {
-
   if (trigger == 0) {
     Slide();
-  }
-
-  else {
+  } else {
     UnSlide();
   }
 }
 
-
-
-const divs = document.querySelectorAll('.a');
-divs.forEach(el => el.addEventListener('click', event => {
-
-  UnSlide();
-}));
+const divs = document.querySelectorAll(".a");
+divs.forEach((el) =>
+  el.addEventListener("click", (event) => {
+    UnSlide();
+  })
+);
