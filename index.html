@@ -12,7 +12,6 @@
 
   <!-- Favicon -->
   <link rel="icon" href="images/AS4.jpg" />
-  
   <!-- Aos library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -130,7 +129,7 @@
 
   <!-- WhereAndWhen Section Start -->
   <section id="WhereAndWhen">
-    <div class="container SubWhereAndWhen">
+    <div class="container SubWhereAndWhen" data-aos="zoom-in">
       <div class="container text-center SubWhereAndWhen2">
         <h1>Where And When</h1>
       </div>
@@ -145,7 +144,7 @@
       </div>
 
       <div class="text-center RSVP">
-        <button type="button" class="btn btn-lg btn-custom">RSVP</button>
+        <a href="#RSVP"> <button type="button" class="btn btn-lg btn-custom">RSVP</button></a>
       </div>
     </div>
   </section>
@@ -155,7 +154,7 @@
   <section id="AboutCouple">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <div class="card border-0" style="width: 100%">
             <img src="images/WS2.jpg" class="card-img-top couple-img" alt="..." />
             <div class="card-body">
@@ -173,7 +172,7 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
           <div class="card border-0" style="width: 100%">
             <img src="images/WS2.jpg" class="card-img-top couple-img" alt="..." />
             <div class="card-body">
@@ -197,7 +196,7 @@
 
   <!-- Gallery Section Start -->
   <section id="Gallery">
-    <div class="container gallery">
+    <div class="container gallery" data-aos="fade-up">
       <div class="galleryheading text-center h1">Gallery</div>
 
       <div class="gallery-img container">
@@ -232,7 +231,7 @@
         </p>
       </div>
 
-      <div class="container EventAndParty-img">
+      <div class="container EventAndParty-img" data-aos="flip-up">
         <div class="row">
           <div class="col-md-6">
             <div class="card border-0" style="width: 100%">
@@ -307,11 +306,11 @@
     <div class="container Accomodation">
       <div class="text-center Accomodation-heading">Accomodation</div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
           <img src="images/WS2.jpg" style="width: 100%" alt="" />
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-left">
           <div class="h1">Hotel Surya</div>
 
           <div>
@@ -352,22 +351,25 @@
       </div>
 
       <div class="form">
-        <div class="form-heading text-center">Join Our Events And Party</div>
+        <div class="form-heading text-center animate__animated animate__rubberBand animate__infinite">Join Our Events And Party</div>
 
         <!--FORM-->
-        <form method="post" action="#" id="rsvpform">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/xdoyvvzg">
+          <fieldset id="fs-frm-inputs">
           <div id="fullname" class="mb-3">
-            <input type="text" class="form-control" id="inputname" placeholder="*Name" />
+            <input type="text" class="form-control" name="name" id="inputname" placeholder="*Name" required />
           </div>
           <div id="email" class="mb-3">
-            <input type="email" class="form-control" id="inputemail" placeholder="*Email" />
+            <input type="email" class="form-control" name="_replyto" id="inputemail" placeholder="*Email" required />
           </div>
           <div id="events-option" class="mb-3">
-           <textarea name="Description" placeholder="Optional" id="" cols="30" rows="10" class="form-control"></textarea>
+           <textarea name="message" placeholder="Give Your Feedback......" id="" cols="30" rows="10" class="form-control" required></textarea>
           </div>
+         </fieldset>
           <div class="mb-3 text-center">
             <input type="submit" id="submitButton" name="submitButton" class="btn btn-custom" value="I'm Attending" />
           </div>
+          <p id="my-form-status"></p>
         </form>
         <!--END of FORM-->
       </div>
@@ -422,7 +424,7 @@
     <div class="center">
       Copyright &copy; 2021 Ankur weds Sonam. All rights reserved!
       <p>
-        Created By Akash Khandelwal
+        <a href="https://github.com/Akashkhandelwal191" id="Credit">Created By Akash Khandelwal</a>
         <i class="fa fa-heart" aria-hidden="true"></i>
       </p>
     </div>
