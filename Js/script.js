@@ -49,6 +49,35 @@ divs.forEach((el) =>
 
 
 
+//Scroll Button BACK TO TOP JS
+window.addEventListener('scroll', function () {
+
+  if (document.documentElement.scrollTop > 181) {
+
+      document.getElementById('backtotop').style.display = "block";
+  }
+
+  else {
+      document.getElementById('backtotop').style.display = "none";
+  }
+
+})
+
+const topscroll = document.querySelector("#backtotop");
+topscroll.addEventListener("click", function () {
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+
+  });
+});
+
+
+
+
+
+
 //Form Submission Js Function
 var form = document.getElementById("fs-frm");    
 async function handleSubmit(event) {
