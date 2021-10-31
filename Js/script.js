@@ -47,38 +47,26 @@ divs.forEach((el) =>
   })
 );
 
-
-
 //Scroll Button BACK TO TOP JS
-window.addEventListener('scroll', function () {
-
+window.addEventListener("scroll", function () {
   if (document.documentElement.scrollTop > 181) {
-
-      document.getElementById('backtotop').style.display = "block";
+    document.getElementById("backtotop").style.display = "block";
+  } else {
+    document.getElementById("backtotop").style.display = "none";
   }
-
-  else {
-      document.getElementById('backtotop').style.display = "none";
-  }
-
-})
+});
 
 const topscroll = document.querySelector("#backtotop");
 topscroll.addEventListener("click", function () {
   window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-
+    top: 0,
+    left: 0,
+    behavior: "smooth",
   });
 });
 
-
-
-
-
 //Form Submission Js Function
-var form = document.getElementById("fs-frm");    
+var form = document.getElementById("fs-frm");
 async function handleSubmit(event) {
   event.preventDefault();
   var status = document.getElementById("my-form-status");
@@ -87,62 +75,64 @@ async function handleSubmit(event) {
     method: form.method,
     body: data,
     headers: {
-        'Accept': 'application/json'
-    }
-  }).then(response => {
-    // status.innerHTML = "Thanks for your submission!";
-      
-    window.alert("Thanks! Your Response has been Recorded");
-    form.reset()
-  }).catch(error => {
-    // status.innerHTML = "Oops! There was a problem submitting your form"
-     window.alert("Oops! There was a problem");
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      // status.innerHTML = "Thanks for your submission!";
 
-  });
+      window.alert("Thanks! Your Response has been Recorded");
+      form.reset();
+    })
+    .catch((error) => {
+      // status.innerHTML = "Oops! There was a problem submitting your form"
+      window.alert("Oops! There was a problem");
+    });
 }
 form.addEventListener("submit", handleSubmit);
 
-
-window.a = 0;
+window.a = -1;
 window.check = ".horizontal";
 
-
-function Progressbar(a,check){
-    const myStepProgressBar = new Kodhus.StepProgressBar();
-    myStepProgressBar.init({ selector: check, activeIndex: a });
+function Progressbar(a, check) {
+  const myStepProgressBar = new Kodhus.StepProgressBar();
+  myStepProgressBar.init({ selector: check, activeIndex: a });
 }
 
+window.addEventListener("load", checking);
+window.addEventListener("resize", checking);
 
-window.addEventListener("load",checking);
-window.addEventListener("resize",checking);
+function checking() {
+  if (this.screen.width <= 995) {
+    console.log(this.screen.width);
 
-function checking()
-{
-
-  if(this.screen.width <= 995)
-  {
-
-       console.log(this.screen.width);
-        
-       var element  = this.document.getElementById('cdt');
-       if(element.classList.contains("horizontal"))
-       {
-        element.classList.remove("horizontal");
-       }
-       check = ".cdt-step-progressbar";
-       Progressbar(a,check);
-       this.document.getElementById("container-progress").style.marginTop = "40px";
-       this.document.getElementById("container-progress").style.marginLeft = "30px";
-
+    var element = this.document.getElementById("cdt");
+    if (element.classList.contains("horizontal")) {
+      element.classList.remove("horizontal");
+    }
+    check = ".cdt-step-progressbar";
+    Progressbar(a, check);
+    this.document.getElementById("container-progress").style.marginTop = "40px";
+    this.document.getElementById("container-progress").style.marginLeft =
+      "30px";
   }
 
-  if(this.screen.width > 995)
-  {
-     
-      this.document.getElementById("cdt").classList.add("horizontal");
-      check = ".horizontal";
-      Progressbar(a,check);
-      this.document.getElementById("container-progress").style.margin = "40px";
+  if (this.screen.width > 995) {
+    this.document.getElementById("cdt").classList.add("horizontal");
+    check = ".horizontal";
+    Progressbar(a, check);
+    this.document.getElementById("container-progress").style.margin = "40px";
   }
-
 }
+
+setInterval(() => {
+  
+  a++;
+  Progressbar(a,check);
+  if (a == 4) {
+    a = -1;
+    setTimeout(() => {
+      Progressbar(a, check);
+    }, 2000);
+  }
+}, 4000);

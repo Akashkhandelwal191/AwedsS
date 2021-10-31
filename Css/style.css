@@ -308,6 +308,21 @@ hr {
   margin: 40px;
 }
 
+.container-progress ul
+{
+  transition: all .2s linear;
+}
+
+.container-progress ul li
+{
+   transition: all .5s linear; 
+}
+
+.container-progress ul li span
+{
+  transition: all 4s linear;
+}
+
 .GIF-IMG {
   margin-top: 50px;
   background-image: url(../images/WS2.jpg);
