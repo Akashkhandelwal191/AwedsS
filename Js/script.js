@@ -77,7 +77,6 @@ topscroll.addEventListener("click", function () {
 
 
 
-
 //Form Submission Js Function
 var form = document.getElementById("fs-frm");    
 async function handleSubmit(event) {
@@ -92,11 +91,26 @@ async function handleSubmit(event) {
     }
   }).then(response => {
     // status.innerHTML = "Thanks for your submission!";
+      
     window.alert("Thanks! Your Response has been Recorded");
     form.reset()
   }).catch(error => {
     // status.innerHTML = "Oops! There was a problem submitting your form"
      window.alert("Oops! There was a problem");
+
   });
 }
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
+
+
+window.a = 0;
+
+Progressbar(2);
+
+function Progressbar(a){
+    const myStepProgressBar = new Kodhus.StepProgressBar();
+    myStepProgressBar.init({ selector: '.cdt-step-progressbar', activeIndex: a });
+}
+
+
+
