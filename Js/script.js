@@ -104,13 +104,45 @@ form.addEventListener("submit", handleSubmit);
 
 
 window.a = 0;
+window.check = ".horizontal";
 
-Progressbar(2);
 
-function Progressbar(a){
+function Progressbar(a,check){
     const myStepProgressBar = new Kodhus.StepProgressBar();
-    myStepProgressBar.init({ selector: '.cdt-step-progressbar', activeIndex: a });
+    myStepProgressBar.init({ selector: check, activeIndex: a });
 }
 
 
+window.addEventListener("load",checking);
+window.addEventListener("resize",checking);
 
+function checking()
+{
+
+  if(this.screen.width <= 995)
+  {
+
+       console.log(this.screen.width);
+        
+       var element  = this.document.getElementById('cdt');
+       if(element.classList.contains("horizontal"))
+       {
+        element.classList.remove("horizontal");
+       }
+       check = ".cdt-step-progressbar";
+       Progressbar(a,check);
+       this.document.getElementById("container-progress").style.marginTop = "40px";
+       this.document.getElementById("container-progress").style.marginLeft = "30px";
+
+  }
+
+  if(this.screen.width > 995)
+  {
+     
+      this.document.getElementById("cdt").classList.add("horizontal");
+      check = ".horizontal";
+      Progressbar(a,check);
+      this.document.getElementById("container-progress").style.margin = "40px";
+  }
+
+}
