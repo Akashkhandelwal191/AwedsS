@@ -15,13 +15,6 @@ html {
 
 body {
   overflow-x: hidden;
-  /* position: relative; */
-  
-}
-
-#Home
-{
-  transition: all .6s ease-in-out;
 }
 
 
@@ -46,7 +39,6 @@ body {
   width: 100vw;
   background-position: center;
   background-size: cover;
-  /* transition: all 0.6s; */
   background-attachment: fixed;
   filter: blur(0.2px);
 }
@@ -59,7 +51,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: all 0.5s;
   z-index: 10;
 }
 
@@ -503,4 +494,25 @@ footer .footer-socialcontact{
 footer .footer-socialcontact img{
   height: 30px;
   width: 30px;
+}
+
+footer .footer-contact{
+  text-align: left;
+  margin: 10px;
+  display: flex;
+  margin-left: auto;
+}
+
+footer .footer-contact span
+{
+  color:#ffffff !important;
+}
+
+footer .footer-contact span a{
+  text-decoration: none;
+  color:#ffffff;
+}
+footer .footer-contact span a:hover{
+
+  color: black;
 }

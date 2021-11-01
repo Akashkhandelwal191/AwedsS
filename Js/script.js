@@ -104,8 +104,7 @@ window.addEventListener("resize", checking);
 
 function checking() {
   if (this.screen.width <= 995) {
-    console.log(this.screen.width);
-
+  
     var element = this.document.getElementById("cdt");
     if (element.classList.contains("horizontal")) {
       element.classList.remove("horizontal");
