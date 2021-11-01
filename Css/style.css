@@ -314,6 +314,7 @@ hr {
 .container-progress ul li span
 {
   transition: all 4s linear;
+  font-size: 1.2rem;
 }
 
 .GIF-IMG {
