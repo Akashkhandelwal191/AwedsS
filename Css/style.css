@@ -279,12 +279,14 @@ hr {
   transition: all 1s;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
+  background-position:center;
+  background-size:auto;
+  height: 500px;
+  width: auto;
 }
 
 .couple-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   filter: saturate(40%);
 }
 
@@ -361,14 +363,14 @@ hr {
 }
 
 .Accomodation img {
-  height: 300px;
+  height: auto;
 }
 
 .Accomodation-heading {
   font-family: "Dancing Script", cursive;
   padding: 10px;
   font-size: 4rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 
@@ -383,6 +385,7 @@ hr {
     font-weight: bolder;
     font-family: 'Ephesis', cursive;
     font-size: 3rem;
+    margin-top: 5px;
     
 }
 
