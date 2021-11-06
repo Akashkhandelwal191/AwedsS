@@ -104,7 +104,6 @@ window.addEventListener("resize", checking);
 
 function checking() {
   if (this.screen.width <= 995) {
-  
     var element = this.document.getElementById("cdt");
     if (element.classList.contains("horizontal")) {
       element.classList.remove("horizontal");
@@ -125,9 +124,8 @@ function checking() {
 }
 
 setInterval(() => {
-  
   a++;
-  Progressbar(a,check);
+  Progressbar(a, check);
   if (a == 4) {
     a = -1;
     setTimeout(() => {
