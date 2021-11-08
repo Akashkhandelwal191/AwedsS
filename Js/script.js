@@ -1,3 +1,12 @@
+
+// Loader JS 
+var Preloader = document.getElementById("loader");
+function myFunction() {
+
+    Preloader.style.display = "none";
+
+}
+
 var countDownDate = new Date("Nov 20, 2021 00:00:00").getTime();
 var trigger = 0;
 var x = setInterval(function () {
@@ -133,3 +142,6 @@ setInterval(() => {
     }, 2000);
   }
 }, 4000);
+
+
+
