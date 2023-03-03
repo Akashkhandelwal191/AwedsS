@@ -550,3 +550,10 @@ footer .footer-contact span a:hover {
     width: 100%;
   }
 }
+
+/* SuccessFul Contact From Message Css */
+#my-form-status
+{
+  text-align: center;
+  color:#81B622;
+}
